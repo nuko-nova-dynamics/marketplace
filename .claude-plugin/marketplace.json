@@ -46,8 +46,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/cdx.git",
-        "ref": "cdx-marketplace-v0.1.0",
-        "sha": "71c93b9a489083aa55ce4a8a1629971141462d34"
+        "ref": "cdx-marketplace-v0.1.1",
+        "sha": "c59a0296a57c4486ad9e0ae12f96f984dbc39c87"
       },
       "description": "Full-surface Codex CLI integration: say \"spawn codex\" and Claude drives codex exec directly — flags chosen per task, structured JSON results, parallel fleets, session resume/fork/apply, Codex Cloud. Replaces the official openai-codex plugin, whose locked-down forwarder hides most of the CLI.",
       "author": {
