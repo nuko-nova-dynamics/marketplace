@@ -12,8 +12,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/claude-goal.git",
-        "ref": "claude-goal-marketplace-v0.2.9",
-        "sha": "709a264c67a179cf49b70ad1cd763c6332036cdd"
+        "ref": "claude-goal-marketplace-v0.3.0",
+        "sha": "f3e6a9504f8d00666f9127df975ada960245614d"
       },
       "description": "Codex-style autonomous goal loop. Use /goal-start \"objective\" or explicit prose like \"set up a goal\" and the agent self-drives turns under large smart budget profiles, with practical-unlimited defaults, pause/resume, /goal-extend, /compact recovery, per-subagent token attribution, and persistence across claude restart. Complements Claude Code 2.1.139+'s built-in /goal.",
       "author": {
