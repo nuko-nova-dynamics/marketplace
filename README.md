@@ -1,43 +1,57 @@
-# Nuko Nova Tools — Claude Code Plugins
+# Nuko Nova Plugin Marketplace
 
-A marketplace of Claude Code plugins built at [Nuko Nova Dynamics](https://github.com/nuko-nova-dynamics).
+The public plugin catalog from [Nuko Nova Dynamics](https://github.com/nuko-nova-dynamics), with native manifests for both Codex and Claude Code. The stable marketplace identifier is `nuko-nova-tools` in both clients.
 
-## Install
+## Codex
 
 ```bash
-/plugin marketplace add nuko-nova-dynamics/claude-marketplace
+codex plugin marketplace add nuko-nova-dynamics/marketplace
+codex plugin add cld@nuko-nova-tools
+codex plugin add nuko-nova-legal@nuko-nova-tools
 ```
 
-Then install individual plugins from the catalog:
+### Codex plugins
+
+- [`cld`](https://github.com/nuko-nova-dynamics/cld) — delegate tasks, reviews, and parallel work from Codex to Claude Code.
+- [`nuko-nova-legal`](https://github.com/nuko-nova-dynamics/nuko-nova-legal) — evidence-first legal drafting, review, research, diligence, compliance, and quality-control skills.
+
+## Claude Code
 
 ```bash
-/plugin install <plugin-name>@nuko-nova-tools
-```
-
-## Plugins
-
-### claude-goal
-
-Codex-style autonomous goal loop. Type `/goal-start "objective"` and the agent self-drives turns under large smart budget profiles or practical-unlimited defaults, with pause/resume, `/goal-extend`, `/compact` recovery, per-subagent token attribution, and persistence across `claude` restart. Complements Claude Code 2.1.139+'s built-in `/goal`.
-
-```bash
+/plugin marketplace add nuko-nova-dynamics/marketplace
 /plugin install claude-goal@nuko-nova-tools
+/plugin install cdx@nuko-nova-tools
+/plugin install nuko-nova-legal@nuko-nova-tools
 ```
 
-Source: [nuko-nova-dynamics/claude-goal](https://github.com/nuko-nova-dynamics/claude-goal)
+### Claude Code plugins
+
+- [`claude-goal`](https://github.com/nuko-nova-dynamics/claude-goal) — autonomous goal loops and persisted progress.
+- [`cdx`](https://github.com/nuko-nova-dynamics/cdx) — delegate tasks, reviews, and parallel work from Claude Code to Codex.
+- [`nuko-nova-legal`](https://github.com/nuko-nova-dynamics/nuko-nova-legal) — the same shared legal-skill bundle distributed to Codex.
 
 ## Updating
 
-Refresh the marketplace catalog to pick up new plugins or version bumps:
+Codex:
+
+```bash
+codex plugin marketplace upgrade nuko-nova-tools
+```
+
+Claude Code:
 
 ```bash
 /plugin marketplace update nuko-nova-tools
 /plugin update <plugin-name>
 ```
 
+## Version integrity
+
+Remote plugin entries are pinned to a release tag and immutable commit SHA. The marketplace validator checks client catalog membership, source alignment, policy fields, and pin formatting before changes are published.
+
 ## Contributing
 
-This marketplace catalog is open for Nuko Nova Dynamics tools. To propose a new plugin or fix the catalog, open a PR against this repo.
+This catalog is open for Nuko Nova Dynamics tools. Propose catalog changes through a pull request against this repository.
 
 ## License
 

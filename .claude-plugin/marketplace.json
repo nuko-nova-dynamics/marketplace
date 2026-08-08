@@ -65,6 +65,38 @@
         "multi-model",
         "structured-output"
       ]
+    },
+    {
+      "name": "nuko-nova-legal",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nuko-nova-dynamics/nuko-nova-legal.git",
+        "ref": "nuko-nova-legal-marketplace-v0.1.0",
+        "sha": "bcdb3bc3107b39a80ccdc0f666db4b8f062d2cb5"
+      },
+      "description": "Evidence-first legal research, drafting, review, diligence, compliance, and quality-control skills with attorney approval gates.",
+      "author": {
+        "name": "Nuko Nova Dynamics",
+        "email": "hello@nukonova.com"
+      },
+      "homepage": "https://github.com/nuko-nova-dynamics/nuko-nova-legal",
+      "repository": "https://github.com/nuko-nova-dynamics/nuko-nova-legal",
+      "license": "Apache-2.0",
+      "keywords": [
+        "legal",
+        "contracts",
+        "legal-research",
+        "compliance",
+        "due-diligence"
+      ],
+      "category": "productivity",
+      "tags": [
+        "legal",
+        "contracts",
+        "research",
+        "compliance",
+        "quality-control"
+      ]
     }
   ]
 }

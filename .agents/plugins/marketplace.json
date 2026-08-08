@@ -1,0 +1,103 @@
+{
+  "name": "nuko-nova-tools",
+  "interface": {
+    "displayName": "Nuko Nova"
+  },
+  "plugins": [
+    {
+      "name": "cld",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nuko-nova-dynamics/cld.git",
+        "ref": "cld-marketplace-v0.2.2",
+        "sha": "81f42cad8108eec383fe38953315b8d05f4d00da"
+      },
+      "version": "0.2.2",
+      "description": "Full-surface Claude Code integration for Codex: delegate, review, fan out, resume, and act on structured Claude results.",
+      "author": {
+        "name": "Nuko Nova Dynamics",
+        "email": "hello@nukonova.com"
+      },
+      "homepage": "https://github.com/nuko-nova-dynamics/cld",
+      "repository": "https://github.com/nuko-nova-dynamics/cld",
+      "license": "Apache-2.0",
+      "keywords": [
+        "claude",
+        "anthropic",
+        "delegation",
+        "code-review",
+        "multi-model"
+      ],
+      "interface": {
+        "displayName": "Claude for Codex",
+        "shortDescription": "Delegate tasks, reviews, and parallel fleets to Claude Code",
+        "longDescription": "Turns Codex into an orchestrator for Anthropic's Claude Code CLI, with schema-backed reviews, parallel workers, resumable sessions, and explicit permission tiers.",
+        "developerName": "Nuko Nova Dynamics",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://github.com/nuko-nova-dynamics/cld",
+        "defaultPrompt": [
+          "Get a second opinion from Claude on this diff",
+          "Delegate this implementation to Claude, then review its work"
+        ],
+        "brandColor": "#17324D"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "nuko-nova-legal",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nuko-nova-dynamics/nuko-nova-legal.git",
+        "ref": "nuko-nova-legal-marketplace-v0.1.0",
+        "sha": "bcdb3bc3107b39a80ccdc0f666db4b8f062d2cb5"
+      },
+      "version": "0.1.0",
+      "description": "Evidence-first legal research, drafting, review, diligence, compliance, and quality-control skills with attorney approval gates.",
+      "author": {
+        "name": "Nuko Nova Dynamics",
+        "email": "hello@nukonova.com"
+      },
+      "homepage": "https://github.com/nuko-nova-dynamics/nuko-nova-legal",
+      "repository": "https://github.com/nuko-nova-dynamics/nuko-nova-legal",
+      "license": "Apache-2.0",
+      "keywords": [
+        "legal",
+        "contracts",
+        "legal-research",
+        "compliance",
+        "due-diligence"
+      ],
+      "interface": {
+        "displayName": "Nuko Nova Legal",
+        "shortDescription": "Evidence-first legal workflows with human gates.",
+        "longDescription": "Seventeen focused skills for legal intake, contracts, research, litigation support, compliance, diligence, and final quality control without autonomous filing, sending, signing, or approval.",
+        "developerName": "Nuko Nova Dynamics",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://nukonova.com",
+        "defaultPrompt": [
+          "Review this contract and propose evidence-backed redlines.",
+          "Research this legal issue and build a verified memorandum.",
+          "Run the final legal quality gate on this draft."
+        ],
+        "brandColor": "#17324D"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
