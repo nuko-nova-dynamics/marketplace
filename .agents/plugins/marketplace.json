@@ -43,7 +43,9 @@
           "Get a second opinion from Claude on this diff",
           "Delegate this implementation to Claude, then review its work"
         ],
-        "brandColor": "#17324D"
+        "brandColor": "#17324D",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -56,10 +58,10 @@
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/nuko-nova-legal.git",
-        "ref": "nuko-nova-legal-marketplace-v0.1.0",
-        "sha": "bcdb3bc3107b39a80ccdc0f666db4b8f062d2cb5"
+        "ref": "nuko-nova-legal-marketplace-v0.1.1",
+        "sha": "fa22e18153792bd828b4f4e6567d7c123be95625"
       },
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "Evidence-first legal research, drafting, review, diligence, compliance, and quality-control skills with attorney approval gates.",
       "author": {
         "name": "Nuko Nova Dynamics",
@@ -71,9 +73,14 @@
       "keywords": [
         "legal",
         "contracts",
+        "contract-drafting",
+        "contract-review",
         "legal-research",
         "compliance",
-        "due-diligence"
+        "due-diligence",
+        "litigation",
+        "privacy",
+        "nda"
       ],
       "interface": {
         "displayName": "Nuko Nova Legal",
@@ -91,7 +98,12 @@
           "Research this legal issue and build a verified memorandum.",
           "Run the final legal quality gate on this draft."
         ],
-        "brandColor": "#17324D"
+        "brandColor": "#7C3AED",
+        "privacyPolicyURL": "https://nukonova.com/privacy",
+        "termsOfServiceURL": "https://nukonova.com/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "logoDark": "./assets/logo-dark.png"
       },
       "policy": {
         "installation": "AVAILABLE",

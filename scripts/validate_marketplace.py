@@ -14,6 +14,17 @@ CLAUDE_PATH = ROOT / ".claude-plugin" / "marketplace.json"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 EXPECTED_CODEX = ["cld", "nuko-nova-legal"]
 EXPECTED_CLAUDE = ["claude-goal", "cdx", "nuko-nova-legal"]
+EXPECTED_CODEX_VERSIONS = {"cld": "0.2.2", "nuko-nova-legal": "0.1.1"}
+EXPECTED_CLAUDE_VERSIONS = {
+    "claude-goal": "0.3.0",
+    "cdx": "0.1.4",
+    "nuko-nova-legal": "0.1.1",
+}
+LEGAL_ARTWORK = {
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "logoDark": "./assets/logo-dark.png",
+}
 
 
 def fail(message: str) -> None:
@@ -63,6 +74,8 @@ def main() -> int:
 
     for name, plugin in codex.items():
         check_source(plugin, f"Codex {name}")
+        if plugin.get("version") != EXPECTED_CODEX_VERSIONS[name]:
+            fail(f"Codex {name}: version mismatch")
         policy = plugin.get("policy")
         if policy != {"installation": "AVAILABLE", "authentication": "ON_INSTALL"}:
             fail(f"Codex {name}: policy mismatch")
@@ -71,9 +84,19 @@ def main() -> int:
 
     for name, plugin in claude.items():
         check_source(plugin, f"Claude {name}")
+        if plugin.get("version") != EXPECTED_CLAUDE_VERSIONS[name]:
+            fail(f"Claude {name}: version mismatch")
 
     if codex["nuko-nova-legal"]["source"] != claude["nuko-nova-legal"]["source"]:
         fail("Nuko Nova Legal source pin differs between clients")
+    legal_interface = codex["nuko-nova-legal"].get("interface")
+    if not isinstance(legal_interface, dict):
+        fail("Codex Nuko Nova Legal: interface metadata is required")
+    for field, expected_path in LEGAL_ARTWORK.items():
+        if legal_interface.get(field) != expected_path:
+            fail(f"Codex Nuko Nova Legal: {field} path mismatch")
+    if claude["nuko-nova-legal"].get("displayName") != "Nuko Nova Legal":
+        fail("Claude Nuko Nova Legal: display name mismatch")
 
     print("PASS: dual-client Nuko Nova marketplace manifests and immutable pins verified")
     return 0

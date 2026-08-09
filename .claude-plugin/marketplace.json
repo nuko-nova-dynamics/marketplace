@@ -2,13 +2,17 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
+  "version": "1.1.0",
   "owner": {
     "name": "Nuko Nova Dynamics",
-    "email": "hello@nukonova.com"
+    "email": "hello@nukonova.com",
+    "url": "https://nukonova.com"
   },
   "plugins": [
     {
       "name": "claude-goal",
+      "displayName": "Claude Goal",
+      "version": "0.3.0",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/claude-goal.git",
@@ -43,6 +47,8 @@
     },
     {
       "name": "cdx",
+      "displayName": "Codex for Claude",
+      "version": "0.1.4",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/cdx.git",
@@ -68,16 +74,19 @@
     },
     {
       "name": "nuko-nova-legal",
+      "displayName": "Nuko Nova Legal",
+      "version": "0.1.1",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/nuko-nova-legal.git",
-        "ref": "nuko-nova-legal-marketplace-v0.1.0",
-        "sha": "bcdb3bc3107b39a80ccdc0f666db4b8f062d2cb5"
+        "ref": "nuko-nova-legal-marketplace-v0.1.1",
+        "sha": "fa22e18153792bd828b4f4e6567d7c123be95625"
       },
       "description": "Evidence-first legal research, drafting, review, diligence, compliance, and quality-control skills with attorney approval gates.",
       "author": {
         "name": "Nuko Nova Dynamics",
-        "email": "hello@nukonova.com"
+        "email": "hello@nukonova.com",
+        "url": "https://nukonova.com"
       },
       "homepage": "https://github.com/nuko-nova-dynamics/nuko-nova-legal",
       "repository": "https://github.com/nuko-nova-dynamics/nuko-nova-legal",
@@ -85,9 +94,14 @@
       "keywords": [
         "legal",
         "contracts",
+        "contract-drafting",
+        "contract-review",
         "legal-research",
         "compliance",
-        "due-diligence"
+        "due-diligence",
+        "litigation",
+        "privacy",
+        "nda"
       ],
       "category": "productivity",
       "tags": [
