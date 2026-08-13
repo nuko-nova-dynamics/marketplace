@@ -110,6 +110,62 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "nuko-nova-unslop",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nuko-nova-dynamics/nuko-nova-unslop.git",
+        "ref": "nuko-nova-unslop-marketplace-v0.3.0",
+        "sha": "cffc52c1c33ac2cdcf9f3b14d5e828d880f59370"
+      },
+      "version": "0.3.0",
+      "description": "Default anti-slop standard for all human-facing writing, with facts, voice, and genre preserved.",
+      "author": {
+        "name": "Nuko Nova Dynamics",
+        "email": "hello@nukonova.com"
+      },
+      "homepage": "https://github.com/nuko-nova-dynamics/nuko-nova-unslop",
+      "repository": "https://github.com/nuko-nova-dynamics/nuko-nova-unslop",
+      "license": "Apache-2.0",
+      "keywords": [
+        "writing",
+        "editing",
+        "humanizer",
+        "anti-slop",
+        "voice",
+        "prose",
+        "copywriting",
+        "always-on"
+      ],
+      "interface": {
+        "displayName": "Nuko Nova Unslop",
+        "shortDescription": "Default anti-slop standard for every human-facing text.",
+        "longDescription": "Apply a clear, direct writing standard to every human-facing response and artifact, with context-aware editing, voice calibration, protected-fact checks, proportionate local linting, genre profiles, and controlled upstream learning.",
+        "developerName": "Nuko Nova Dynamics",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://nukonova.com",
+        "privacyPolicyURL": "https://nukonova.com/privacy",
+        "termsOfServiceURL": "https://nukonova.com/terms",
+        "defaultPrompt": [
+          "Apply Nuko Nova Unslop to every human-facing response and artifact by default.",
+          "Audit this copy for AI slop, but do not rewrite it.",
+          "Rewrite this without slop while preserving its facts and voice."
+        ],
+        "brandColor": "#7C3AED",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "logoDark": "./assets/logo-dark.png"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }

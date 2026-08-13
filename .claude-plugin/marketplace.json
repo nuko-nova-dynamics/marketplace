@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.1.0",
+  "version": "1.6.0",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -110,6 +110,44 @@
         "research",
         "compliance",
         "quality-control"
+      ]
+    },
+    {
+      "name": "nuko-nova-unslop",
+      "displayName": "Nuko Nova Unslop",
+      "version": "0.3.0",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nuko-nova-dynamics/nuko-nova-unslop.git",
+        "ref": "nuko-nova-unslop-marketplace-v0.3.0",
+        "sha": "cffc52c1c33ac2cdcf9f3b14d5e828d880f59370"
+      },
+      "description": "Default anti-slop standard for all human-facing writing, with facts, voice, and genre preserved.",
+      "author": {
+        "name": "Nuko Nova Dynamics",
+        "email": "hello@nukonova.com",
+        "url": "https://nukonova.com"
+      },
+      "homepage": "https://github.com/nuko-nova-dynamics/nuko-nova-unslop",
+      "repository": "https://github.com/nuko-nova-dynamics/nuko-nova-unslop",
+      "license": "Apache-2.0",
+      "keywords": [
+        "writing",
+        "editing",
+        "humanizer",
+        "anti-slop",
+        "voice",
+        "prose",
+        "copywriting",
+        "always-on"
+      ],
+      "category": "productivity",
+      "tags": [
+        "writing",
+        "editing",
+        "humanizer",
+        "anti-slop",
+        "voice"
       ]
     }
   ]
