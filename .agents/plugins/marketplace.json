@@ -116,10 +116,10 @@
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/nuko-nova-unslop.git",
-        "ref": "nuko-nova-unslop-marketplace-v0.2.1",
-        "sha": "8a7da1669fd5763a4ee3acb047ee04b0532d996f"
+        "ref": "nuko-nova-unslop-marketplace-v0.2.2",
+        "sha": "12586f1a5b05c3797136249d49195408f8969464"
       },
-      "version": "0.2.1",
+      "version": "0.2.2",
       "description": "Default anti-slop standard for all human-facing writing, with facts, voice, and genre preserved.",
       "author": {
         "name": "Nuko Nova Dynamics",
@@ -156,7 +156,10 @@
           "Audit this copy for AI slop, but do not rewrite it.",
           "Rewrite this without slop while preserving its facts and voice."
         ],
-        "brandColor": "#7C3AED"
+        "brandColor": "#7C3AED",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "logoDark": "./assets/logo-dark.png"
       },
       "policy": {
         "installation": "AVAILABLE",

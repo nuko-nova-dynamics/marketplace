@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -115,12 +115,12 @@
     {
       "name": "nuko-nova-unslop",
       "displayName": "Nuko Nova Unslop",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/nuko-nova-unslop.git",
-        "ref": "nuko-nova-unslop-marketplace-v0.2.1",
-        "sha": "8a7da1669fd5763a4ee3acb047ee04b0532d996f"
+        "ref": "nuko-nova-unslop-marketplace-v0.2.2",
+        "sha": "12586f1a5b05c3797136249d49195408f8969464"
       },
       "description": "Default anti-slop standard for all human-facing writing, with facts, voice, and genre preserved.",
       "author": {

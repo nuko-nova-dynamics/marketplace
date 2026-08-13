@@ -12,25 +12,30 @@ ROOT = Path(__file__).resolve().parents[1]
 CODEX_PATH = ROOT / ".agents" / "plugins" / "marketplace.json"
 CLAUDE_PATH = ROOT / ".claude-plugin" / "marketplace.json"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
-EXPECTED_MARKETPLACE_VERSION = "1.4.0"
+EXPECTED_MARKETPLACE_VERSION = "1.5.0"
 EXPECTED_CODEX = ["cld", "nuko-nova-legal", "nuko-nova-unslop"]
 EXPECTED_CLAUDE = ["claude-goal", "cdx", "nuko-nova-legal", "nuko-nova-unslop"]
 EXPECTED_CODEX_VERSIONS = {
     "cld": "0.2.2",
     "nuko-nova-legal": "0.1.1",
-    "nuko-nova-unslop": "0.2.1",
+    "nuko-nova-unslop": "0.2.2",
 }
 EXPECTED_CLAUDE_VERSIONS = {
     "claude-goal": "0.3.0",
     "cdx": "0.1.4",
     "nuko-nova-legal": "0.1.1",
-    "nuko-nova-unslop": "0.2.1",
+    "nuko-nova-unslop": "0.2.2",
 }
 DUAL_CLIENT_DISPLAY_NAMES = {
     "nuko-nova-legal": "Nuko Nova Legal",
     "nuko-nova-unslop": "Nuko Nova Unslop",
 }
 LEGAL_ARTWORK = {
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "logoDark": "./assets/logo-dark.png",
+}
+UNSLOP_ARTWORK = {
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/logo.png",
     "logoDark": "./assets/logo-dark.png",
@@ -121,6 +126,11 @@ def main() -> int:
     for field, expected_path in LEGAL_ARTWORK.items():
         if legal_interface.get(field) != expected_path:
             fail(f"Codex Nuko Nova Legal: {field} path mismatch")
+
+    unslop_interface = codex["nuko-nova-unslop"].get("interface")
+    for field, expected_path in UNSLOP_ARTWORK.items():
+        if unslop_interface.get(field) != expected_path:
+            fail(f"Codex Nuko Nova Unslop: {field} path mismatch")
 
     print("PASS: dual-client Nuko Nova marketplace manifests and immutable pins verified")
     return 0
