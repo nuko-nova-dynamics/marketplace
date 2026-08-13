@@ -12,13 +12,22 @@ ROOT = Path(__file__).resolve().parents[1]
 CODEX_PATH = ROOT / ".agents" / "plugins" / "marketplace.json"
 CLAUDE_PATH = ROOT / ".claude-plugin" / "marketplace.json"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
-EXPECTED_CODEX = ["cld", "nuko-nova-legal"]
-EXPECTED_CLAUDE = ["claude-goal", "cdx", "nuko-nova-legal"]
-EXPECTED_CODEX_VERSIONS = {"cld": "0.2.2", "nuko-nova-legal": "0.1.1"}
+EXPECTED_CODEX = ["cld", "nuko-nova-legal", "nuko-nova-unslop"]
+EXPECTED_CLAUDE = ["claude-goal", "cdx", "nuko-nova-legal", "nuko-nova-unslop"]
+EXPECTED_CODEX_VERSIONS = {
+    "cld": "0.2.2",
+    "nuko-nova-legal": "0.1.1",
+    "nuko-nova-unslop": "0.1.0",
+}
 EXPECTED_CLAUDE_VERSIONS = {
     "claude-goal": "0.3.0",
     "cdx": "0.1.4",
     "nuko-nova-legal": "0.1.1",
+    "nuko-nova-unslop": "0.1.0",
+}
+DUAL_CLIENT_DISPLAY_NAMES = {
+    "nuko-nova-legal": "Nuko Nova Legal",
+    "nuko-nova-unslop": "Nuko Nova Unslop",
 }
 LEGAL_ARTWORK = {
     "composerIcon": "./assets/icon.png",
@@ -87,16 +96,21 @@ def main() -> int:
         if plugin.get("version") != EXPECTED_CLAUDE_VERSIONS[name]:
             fail(f"Claude {name}: version mismatch")
 
-    if codex["nuko-nova-legal"]["source"] != claude["nuko-nova-legal"]["source"]:
-        fail("Nuko Nova Legal source pin differs between clients")
+    for name, display_name in DUAL_CLIENT_DISPLAY_NAMES.items():
+        if codex[name]["source"] != claude[name]["source"]:
+            fail(f"{display_name} source pin differs between clients")
+        interface = codex[name].get("interface")
+        if not isinstance(interface, dict):
+            fail(f"Codex {display_name}: interface metadata is required")
+        if interface.get("displayName") != display_name:
+            fail(f"Codex {display_name}: display name mismatch")
+        if claude[name].get("displayName") != display_name:
+            fail(f"Claude {display_name}: display name mismatch")
+
     legal_interface = codex["nuko-nova-legal"].get("interface")
-    if not isinstance(legal_interface, dict):
-        fail("Codex Nuko Nova Legal: interface metadata is required")
     for field, expected_path in LEGAL_ARTWORK.items():
         if legal_interface.get(field) != expected_path:
             fail(f"Codex Nuko Nova Legal: {field} path mismatch")
-    if claude["nuko-nova-legal"].get("displayName") != "Nuko Nova Legal":
-        fail("Claude Nuko Nova Legal: display name mismatch")
 
     print("PASS: dual-client Nuko Nova marketplace manifests and immutable pins verified")
     return 0
