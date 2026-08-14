@@ -116,11 +116,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/nuko-nova-unslop.git",
-        "ref": "nuko-nova-unslop-marketplace-v0.4.0",
-        "sha": "63d0967b930f86a92e16880753efc30a91037afb"
+        "ref": "nuko-nova-unslop-marketplace-v0.5.0",
+        "sha": "e8d8281e1e6598e5f516e75e01c47eab827476b0"
       },
-      "version": "0.4.0",
-      "description": "Default anti-slop standard for all human-facing writing, with facts, voice, and genre preserved.",
+      "version": "0.5.0",
+      "description": "Always-on human-writing standard for every human-facing response and artifact: no slop or cringe, with facts, voice, and genre preserved.",
       "author": {
         "name": "Nuko Nova Dynamics",
         "email": "hello@nukonova.com"
@@ -133,6 +133,8 @@
         "editing",
         "humanizer",
         "anti-slop",
+        "no-cringe",
+        "human-writing",
         "voice",
         "prose",
         "copywriting",
@@ -140,8 +142,8 @@
       ],
       "interface": {
         "displayName": "Nuko Nova Unslop",
-        "shortDescription": "Default anti-slop standard for every human-facing text.",
-        "longDescription": "Apply a clear, direct writing standard to every human-facing response and artifact, with context-aware editing, voice calibration, protected-fact checks, proportionate local linting, genre profiles, and controlled upstream learning.",
+        "shortDescription": "Human writing with no slop, no cringe, and no fake personality.",
+        "longDescription": "Apply an always-on human-writing standard to every human-facing response and artifact, with context-aware drafting, no-cringe judgment, voice calibration, emotional proportion, protected-fact checks, local linting, genre profiles, and controlled upstream learning.",
         "developerName": "Nuko Nova Dynamics",
         "category": "Productivity",
         "capabilities": [
@@ -152,7 +154,7 @@
         "privacyPolicyURL": "https://nukonova.com/privacy",
         "termsOfServiceURL": "https://nukonova.com/terms",
         "defaultPrompt": [
-          "Apply Nuko Nova Unslop to every human-facing response and artifact by default.",
+          "Apply human writing with no slop or cringe to every human-facing response and artifact.",
           "Audit this copy for AI slop, but do not rewrite it.",
           "Rewrite this without slop while preserving its facts and voice."
         ],
