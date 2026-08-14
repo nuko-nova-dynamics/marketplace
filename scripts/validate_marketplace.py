@@ -12,19 +12,19 @@ ROOT = Path(__file__).resolve().parents[1]
 CODEX_PATH = ROOT / ".agents" / "plugins" / "marketplace.json"
 CLAUDE_PATH = ROOT / ".claude-plugin" / "marketplace.json"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
-EXPECTED_MARKETPLACE_VERSION = "1.8.0"
+EXPECTED_MARKETPLACE_VERSION = "1.9.0"
 EXPECTED_CODEX = ["cld", "nuko-nova-legal", "nuko-nova-unslop"]
 EXPECTED_CLAUDE = ["claude-goal", "cdx", "nuko-nova-legal", "nuko-nova-unslop"]
 EXPECTED_CODEX_VERSIONS = {
     "cld": "0.2.2",
     "nuko-nova-legal": "0.1.1",
-    "nuko-nova-unslop": "0.5.0",
+    "nuko-nova-unslop": "0.5.1",
 }
 EXPECTED_CLAUDE_VERSIONS = {
     "claude-goal": "0.3.0",
     "cdx": "0.1.4",
     "nuko-nova-legal": "0.1.1",
-    "nuko-nova-unslop": "0.5.0",
+    "nuko-nova-unslop": "0.5.1",
 }
 DUAL_CLIENT_DISPLAY_NAMES = {
     "nuko-nova-legal": "Nuko Nova Legal",
@@ -117,7 +117,7 @@ def main() -> int:
             fail(f"Claude {display_name}: display name mismatch")
 
     unslop = codex["nuko-nova-unslop"]
-    description = unslop.get("description", "")
+    description = unslop.get("description", "").lower()
     if "human-writing standard" not in description or "no slop or cringe" not in description:
         fail("Nuko Nova Unslop: human-writing and no-cringe standard is missing")
     if unslop.get("keywords", [])[-1:] != ["always-on"]:

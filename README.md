@@ -32,7 +32,7 @@ codex plugin add nuko-nova-unslop@nuko-nova-tools
 - [`claude-goal`](https://github.com/nuko-nova-dynamics/claude-goal): autonomous goal loops and persisted progress.
 - [`cdx`](https://github.com/nuko-nova-dynamics/cdx): delegate tasks, reviews, and parallel work from Claude Code to Codex.
 - [`nuko-nova-legal`](https://github.com/nuko-nova-dynamics/nuko-nova-legal): the same shared legal-skill bundle distributed to Codex.
-- [`nuko-nova-unslop`](https://github.com/nuko-nova-dynamics/nuko-nova-unslop): the same always-on human-writing standard, skill, and local checks distributed to Codex.
+- [`nuko-nova-unslop`](https://github.com/nuko-nova-dynamics/nuko-nova-unslop): the same human-writing skill and local checks distributed to Codex, without lifecycle hooks or final-output interception.
 
 ## Updating
 
