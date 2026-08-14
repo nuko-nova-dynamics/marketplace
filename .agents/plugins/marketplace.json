@@ -116,10 +116,10 @@
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/nuko-nova-unslop.git",
-        "ref": "nuko-nova-unslop-marketplace-v0.3.0",
-        "sha": "cffc52c1c33ac2cdcf9f3b14d5e828d880f59370"
+        "ref": "nuko-nova-unslop-marketplace-v0.4.0",
+        "sha": "63d0967b930f86a92e16880753efc30a91037afb"
       },
-      "version": "0.3.0",
+      "version": "0.4.0",
       "description": "Default anti-slop standard for all human-facing writing, with facts, voice, and genre preserved.",
       "author": {
         "name": "Nuko Nova Dynamics",
