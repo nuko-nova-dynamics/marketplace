@@ -15,7 +15,7 @@ codex plugin add nuko-nova-unslop@nuko-nova-tools
 
 - [`cld`](https://github.com/nuko-nova-dynamics/cld): delegate tasks, reviews, and parallel work from Codex to Claude Code.
 - [`nuko-nova-legal`](https://github.com/nuko-nova-dynamics/nuko-nova-legal): evidence-first legal drafting, review, research, diligence, compliance, and quality-control skills.
-- [`nuko-nova-unslop`](https://github.com/nuko-nova-dynamics/nuko-nova-unslop): human writing with no slop or cringe across every human-facing response and prose artifact, with facts and owned voice preserved.
+- [`nuko-nova-unslop`](https://github.com/nuko-nova-dynamics/nuko-nova-unslop): human writing with no slop or cringe across every human-facing response and prose artifact, with facts and owned voice preserved. Type `$unslop` and select **Unslop** for explicit use.
 
 ## Claude Code
 
@@ -32,7 +32,7 @@ codex plugin add nuko-nova-unslop@nuko-nova-tools
 - [`claude-goal`](https://github.com/nuko-nova-dynamics/claude-goal): autonomous goal loops and persisted progress.
 - [`cdx`](https://github.com/nuko-nova-dynamics/cdx): delegate tasks, reviews, and parallel work from Claude Code to Codex.
 - [`nuko-nova-legal`](https://github.com/nuko-nova-dynamics/nuko-nova-legal): the same shared legal-skill bundle distributed to Codex.
-- [`nuko-nova-unslop`](https://github.com/nuko-nova-dynamics/nuko-nova-unslop): the same human-writing skill and local checks distributed to Codex, without lifecycle hooks or final-output interception.
+- [`nuko-nova-unslop`](https://github.com/nuko-nova-dynamics/nuko-nova-unslop): the same human-writing skill and local checks distributed to Codex, without lifecycle hooks or final-output interception. Invoke it with `/unslop`.
 
 ## Updating
 
