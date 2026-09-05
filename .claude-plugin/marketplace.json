@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.15.0",
+  "version": "1.15.1",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -48,14 +48,14 @@
     {
       "name": "cdx",
       "displayName": "Codex for Claude",
-      "version": "0.1.4",
+      "version": "0.2.0",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/cdx.git",
-        "ref": "cdx-marketplace-v0.1.4",
-        "sha": "15d46edfad6cbc7a9e1da8f9608f6e025b2013e8"
+        "ref": "cdx-marketplace-v0.2.0",
+        "sha": "472c390d54318881f0dd4db8e1e600bfc3128802"
       },
-      "description": "Full-surface Codex CLI integration: say \"spawn codex\" and Claude drives codex exec directly — flags chosen per task, structured JSON results, parallel fleets, session resume/fork/apply, Codex Cloud. Replaces the official openai-codex plugin, whose locked-down forwarder hides most of the CLI.",
+      "description": "Delegate work from Claude Code to Codex with model-aware prompts, structured reviews, parallel workers, and noninteractive session resume and fork.",
       "author": {
         "name": "Nuko Nova Dynamics",
         "email": "hello@nukonova.com"
