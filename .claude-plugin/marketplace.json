@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.15.3",
+  "version": "1.15.4",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -48,14 +48,14 @@
     {
       "name": "cdx",
       "displayName": "Codex for Claude",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/cdx.git",
-        "ref": "cdx-marketplace-v0.2.0",
-        "sha": "472c390d54318881f0dd4db8e1e600bfc3128802"
+        "ref": "cdx-marketplace-v0.3.0",
+        "sha": "0b36579340fd822b86c820e1bbcce30696d6cc66"
       },
-      "description": "Delegate work from Claude Code to Codex with model-aware prompts, structured reviews, parallel workers, and noninteractive session resume and fork.",
+      "description": "Delegate coding, Computer Use, and browser tasks from Claude Code to Codex with explicit plugin and profile selection, verified results, structured reviews, and session controls.",
       "author": {
         "name": "Nuko Nova Dynamics",
         "email": "hello@nukonova.com"
@@ -69,7 +69,9 @@
         "delegation",
         "review",
         "multi-model",
-        "structured-output"
+        "structured-output",
+        "computer-use",
+        "browser"
       ]
     },
     {
