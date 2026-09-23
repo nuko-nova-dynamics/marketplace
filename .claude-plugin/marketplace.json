@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.16.5",
+  "version": "1.16.6",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
