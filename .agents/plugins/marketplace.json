@@ -9,11 +9,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/cld.git",
-        "ref": "cld-marketplace-v0.2.2",
-        "sha": "81f42cad8108eec383fe38953315b8d05f4d00da"
+        "ref": "cld-marketplace-v0.3.0",
+        "sha": "459fad24f29b59dbd58a418c94fb706233b02b3d"
       },
-      "version": "0.2.2",
-      "description": "Full-surface Claude Code integration for Codex: delegate, review, fan out, resume, and act on structured Claude results.",
+      "version": "0.3.0",
+      "description": "Agent skills for delegating tasks, reviews, parallel workers, and resumable sessions to Claude Code, with verified structured results.",
       "author": {
         "name": "Nuko Nova Dynamics",
         "email": "hello@nukonova.com"
@@ -31,7 +31,7 @@
       "interface": {
         "displayName": "Claude for Codex",
         "shortDescription": "Delegate tasks, reviews, and parallel fleets to Claude Code",
-        "longDescription": "Turns Codex into an orchestrator for Anthropic's Claude Code CLI, with schema-backed reviews, parallel workers, resumable sessions, and explicit permission tiers.",
+        "longDescription": "Delegate implementation and research to Claude Code, request structured reviews, coordinate independent workers, and resume sessions. Includes model-specific prompting guidance and a runner that checks terminal outcomes, saves diagnostic artifacts, and forwards cancellation.",
         "developerName": "Nuko Nova Dynamics",
         "category": "Developer Tools",
         "capabilities": [
