@@ -9,10 +9,10 @@
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/cld.git",
-        "ref": "cld-marketplace-v0.3.0",
-        "sha": "459fad24f29b59dbd58a418c94fb706233b02b3d"
+        "ref": "cld-marketplace-v0.3.1",
+        "sha": "bc01654744397ad6b9a8e87fe58df8e9e7a75748"
       },
-      "version": "0.3.0",
+      "version": "0.3.1",
       "description": "Agent skills for delegating tasks, reviews, parallel workers, and resumable sessions to Claude Code, with verified structured results.",
       "author": {
         "name": "Nuko Nova Dynamics",
