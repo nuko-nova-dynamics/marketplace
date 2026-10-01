@@ -25,6 +25,7 @@ codex plugin add nuko-nova-unslop@nuko-nova-tools
 /plugin install cdx@nuko-nova-tools
 /plugin install nuko-nova-legal@nuko-nova-tools
 /plugin install nuko-nova-unslop@nuko-nova-tools
+/plugin install docs-first@nuko-nova-tools
 ```
 
 ### Claude Code plugins
@@ -33,6 +34,7 @@ codex plugin add nuko-nova-unslop@nuko-nova-tools
 - [`cdx`](https://github.com/nuko-nova-dynamics/cdx): delegate tasks, reviews, and parallel work from Claude Code to Codex.
 - [`nuko-nova-legal`](https://github.com/nuko-nova-dynamics/nuko-nova-legal): the same shared legal-skill bundle distributed to Codex.
 - [`nuko-nova-unslop`](https://github.com/nuko-nova-dynamics/nuko-nova-unslop): the same human-writing skill and local checks available in Codex, without lifecycle hooks or final-output interception. Invoke it with `/unslop`, or use `/nuko-nova-unslop:tighten` to run the full standard followed by its strictest useful removal pass.
+- [`docs-first`](https://github.com/nuko-nova-dynamics/docs-first): a mod that holds back dependency changes, new imports and sensitive-file edits until the session has checked the registry or the official docs. Requires Claude Code 2.1.287 or later.
 
 ## Updating
 
