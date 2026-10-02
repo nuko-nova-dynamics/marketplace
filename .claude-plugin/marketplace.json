@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.17.0",
+  "version": "1.17.1",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -157,12 +157,12 @@
     {
       "name": "docs-first",
       "displayName": "Docs First",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/docs-first.git",
-        "ref": "docs-first-marketplace-v0.1.0",
-        "sha": "9d21714cb3ce6525d45acfad5fa2fd91c647e504"
+        "ref": "docs-first-marketplace-v0.1.1",
+        "sha": "1946557f7e6ea9c583a27c7a477f773c4523e5c5"
       },
       "description": "A mod that holds back dependency changes, new imports and sensitive-file edits until the session has checked the registry or the official docs. Requires Claude Code 2.1.287 or later.",
       "author": {
