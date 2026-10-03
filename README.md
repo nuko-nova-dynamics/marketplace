@@ -26,6 +26,7 @@ codex plugin add nuko-nova-unslop@nuko-nova-tools
 /plugin install nuko-nova-legal@nuko-nova-tools
 /plugin install nuko-nova-unslop@nuko-nova-tools
 /plugin install docs-first@nuko-nova-tools
+/plugin install lightbox@nuko-nova-tools
 ```
 
 ### Claude Code plugins
@@ -35,6 +36,7 @@ codex plugin add nuko-nova-unslop@nuko-nova-tools
 - [`nuko-nova-legal`](https://github.com/nuko-nova-dynamics/nuko-nova-legal): the same shared legal-skill bundle distributed to Codex.
 - [`nuko-nova-unslop`](https://github.com/nuko-nova-dynamics/nuko-nova-unslop): the same human-writing skill and local checks available in Codex, without lifecycle hooks or final-output interception. Invoke it with `/unslop`, or use `/nuko-nova-unslop:tighten` to run the full standard followed by its strictest useful removal pass.
 - [`docs-first`](https://github.com/nuko-nova-dynamics/docs-first): a mod that holds back dependency changes, new imports and sensitive-file edits until the session has checked the registry or the official docs. Requires Claude Code 2.1.287 or later.
+- [`lightbox`](https://github.com/nuko-nova-dynamics/lightbox): a mod that shows the images you paste and the ones Claude reads, receives or creates in a small strip above the prompt, including HEIC. Requires Claude Code 2.1.288 or later.
 
 ## Updating
 
