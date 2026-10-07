@@ -21,7 +21,6 @@ codex plugin add nuko-nova-unslop@nuko-nova-tools
 
 ```bash
 /plugin marketplace add nuko-nova-dynamics/marketplace
-/plugin install claude-goal@nuko-nova-tools
 /plugin install cdx@nuko-nova-tools
 /plugin install nuko-nova-legal@nuko-nova-tools
 /plugin install nuko-nova-unslop@nuko-nova-tools
@@ -31,7 +30,6 @@ codex plugin add nuko-nova-unslop@nuko-nova-tools
 
 ### Claude Code plugins
 
-- [`claude-goal`](https://github.com/nuko-nova-dynamics/claude-goal): autonomous goal loops and persisted progress.
 - [`cdx`](https://github.com/nuko-nova-dynamics/cdx): delegate tasks, reviews, and parallel work from Claude Code to Codex.
 - [`nuko-nova-legal`](https://github.com/nuko-nova-dynamics/nuko-nova-legal): the same shared legal-skill bundle distributed to Codex.
 - [`nuko-nova-unslop`](https://github.com/nuko-nova-dynamics/nuko-nova-unslop): the same human-writing skill and local checks available in Codex, without lifecycle hooks or final-output interception. Invoke it with `/unslop`, or use `/nuko-nova-unslop:tighten` to run the full standard followed by its strictest useful removal pass.
