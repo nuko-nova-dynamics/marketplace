@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.21.0",
+  "version": "1.22.0",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -121,12 +121,12 @@
     {
       "name": "docs-first",
       "displayName": "Docs First",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/docs-first.git",
-        "ref": "docs-first-marketplace-v0.1.1",
-        "sha": "1946557f7e6ea9c583a27c7a477f773c4523e5c5"
+        "ref": "docs-first-marketplace-v0.1.2",
+        "sha": "d5a650f97872a21b6a31f401d66da3a8f550855c"
       },
       "description": "A mod that holds back dependency changes, new imports and sensitive-file edits until the session has checked the registry or the official docs. Requires Claude Code 2.1.287 or later.",
       "author": {
@@ -156,12 +156,12 @@
     {
       "name": "lightbox",
       "displayName": "Lightbox",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/lightbox.git",
-        "ref": "lightbox-marketplace-v0.3.0",
-        "sha": "966a56d7d72b17a91260af0db12dabcd6e06d102"
+        "ref": "lightbox-marketplace-v0.3.1",
+        "sha": "94d66e9c13018bfcd542ebd161cedbb09b279d17"
       },
       "description": "A mod that shows the images you paste and the ones Claude reads, receives or creates in a small strip above the prompt, including HEIC. Requires Claude Code 2.1.288 or later.",
       "author": {
@@ -185,6 +185,41 @@
         "mod",
         "images",
         "screenshots",
+        "terminal"
+      ]
+    },
+    {
+      "name": "statusline-hud",
+      "displayName": "Statusline HUD",
+      "version": "0.1.0",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nuko-nova-dynamics/statusline-hud.git",
+        "ref": "statusline-hud-marketplace-v0.1.0",
+        "sha": "d5f58781bae9e2a378b46e253fc800729757cece"
+      },
+      "description": "A calm two-line status line, plus a mod that shows running tools and agents, todos, compactions, the prompt cache countdown, the auto-compact forecast and docs-first blocks above the prompt only while they matter. Reads 5-hour and 7-day usage from a CLIProxyAPI pool when Claude Code has none. Requires Claude Code 2.1.294 or later and Bun.",
+      "author": {
+        "name": "Nuko Nova Dynamics",
+        "email": "hello@nukonova.com",
+        "url": "https://nukonova.com"
+      },
+      "homepage": "https://github.com/nuko-nova-dynamics/statusline-hud",
+      "repository": "https://github.com/nuko-nova-dynamics/statusline-hud",
+      "license": "MIT",
+      "keywords": [
+        "claude-code",
+        "claude-code-plugin",
+        "mod",
+        "statusline",
+        "hud",
+        "terminal"
+      ],
+      "category": "developer-tools",
+      "tags": [
+        "mod",
+        "statusline",
+        "hud",
         "terminal"
       ]
     }
