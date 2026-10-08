@@ -12,9 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 CODEX_PATH = ROOT / ".agents" / "plugins" / "marketplace.json"
 CLAUDE_PATH = ROOT / ".claude-plugin" / "marketplace.json"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
-EXPECTED_MARKETPLACE_VERSION = "1.22.0"
+EXPECTED_MARKETPLACE_VERSION = "1.23.0"
 EXPECTED_CODEX = ["cld", "nuko-nova-legal", "nuko-nova-unslop"]
-EXPECTED_CLAUDE = ["cdx", "nuko-nova-legal", "nuko-nova-unslop", "docs-first", "lightbox", "statusline-hud"]
+EXPECTED_CLAUDE = ["cdx", "nuko-nova-legal", "nuko-nova-unslop", "docs-first", "lightbox", "statusline-hud", "secrets-env"]
 EXPECTED_CODEX_VERSIONS = {
     "cld": "0.3.1",
     "nuko-nova-legal": "0.1.1",
@@ -27,6 +27,7 @@ EXPECTED_CLAUDE_VERSIONS = {
     "docs-first": "0.1.2",
     "lightbox": "0.3.1",
     "statusline-hud": "0.1.0",
+    "secrets-env": "0.1.0",
 }
 DUAL_CLIENT_DISPLAY_NAMES = {
     "nuko-nova-legal": "Nuko Nova Legal",

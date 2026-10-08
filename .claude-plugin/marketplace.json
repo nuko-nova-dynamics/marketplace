@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.22.0",
+  "version": "1.23.0",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -221,6 +221,41 @@
         "statusline",
         "hud",
         "terminal"
+      ]
+    },
+    {
+      "name": "secrets-env",
+      "displayName": "Secrets Env",
+      "version": "0.1.0",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nuko-nova-dynamics/secrets-env.git",
+        "ref": "secrets-env-marketplace-v0.1.0",
+        "sha": "cb127819a648953dccb96ba3b2b488bc1f0d802d"
+      },
+      "description": "A mod that lets Claude ask for API keys and tokens in a native macOS panel, keep them in your Keeper vault, and use them in commands and gitignored env files without the values reaching the conversation. Requires macOS, Claude Code 2.1.295 or later, Bun and Keeper Commander.",
+      "author": {
+        "name": "Nuko Nova Dynamics",
+        "email": "hello@nukonova.com",
+        "url": "https://nukonova.com"
+      },
+      "homepage": "https://github.com/nuko-nova-dynamics/secrets-env",
+      "repository": "https://github.com/nuko-nova-dynamics/secrets-env",
+      "license": "MIT",
+      "keywords": [
+        "claude-code",
+        "claude-code-plugin",
+        "mod",
+        "secrets",
+        "keeper",
+        "env"
+      ],
+      "category": "developer-tools",
+      "tags": [
+        "mod",
+        "secrets",
+        "keeper",
+        "env"
       ]
     }
   ]
