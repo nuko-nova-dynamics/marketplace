@@ -27,6 +27,7 @@ codex plugin add nuko-nova-unslop@nuko-nova-tools
 /plugin install docs-first@nuko-nova-tools
 /plugin install lightbox@nuko-nova-tools
 /plugin install statusline-hud@nuko-nova-tools
+/plugin install secrets-env@nuko-nova-tools
 ```
 
 ### Claude Code plugins
@@ -37,6 +38,7 @@ codex plugin add nuko-nova-unslop@nuko-nova-tools
 - [`docs-first`](https://github.com/nuko-nova-dynamics/docs-first): a mod that holds back dependency changes, new imports and sensitive-file edits until the session has checked the registry or the official docs. Requires Claude Code 2.1.287 or later.
 - [`lightbox`](https://github.com/nuko-nova-dynamics/lightbox): a mod that shows the images you paste and the ones Claude reads, receives or creates in a small strip above the prompt, including HEIC. Requires Claude Code 2.1.288 or later.
 - [`statusline-hud`](https://github.com/nuko-nova-dynamics/statusline-hud): a calm two-line status line, plus a mod that shows running tools and agents, todos, compactions and the docs-first gate above the prompt only while they matter. Requires Claude Code 2.1.294 or later and Bun.
+- [`secrets-env`](https://github.com/nuko-nova-dynamics/secrets-env): a mod that lets Claude ask for API keys in a native macOS panel, keep them in Keeper, and use them without the values reaching the conversation. Requires macOS, Claude Code 2.1.295 or later, Bun and Keeper Commander.
 
 ## Updating
 
