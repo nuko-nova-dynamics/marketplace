@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.25.1",
+  "version": "1.26.0",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -12,12 +12,12 @@
     {
       "name": "cdx",
       "displayName": "Codex for Claude",
-      "version": "0.4.3",
+      "version": "0.5.0",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/cdx.git",
-        "ref": "cdx-marketplace-v0.4.3",
-        "sha": "90020eb8f165c296e440911dabb081a1d9a422fe"
+        "ref": "cdx-marketplace-v0.5.0",
+        "sha": "a5736be4d4d9af1a4836f1224c11acc5680a01cb"
       },
       "description": "Delegate coding, Computer Use, and browser tasks from Claude Code to Codex with explicit plugin and profile selection, verified results, structured reviews, and session controls.",
       "author": {
