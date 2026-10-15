@@ -24,7 +24,7 @@ EXPECTED_CLAUDE_VERSIONS = {
     "cdx": "0.6.4",
     "nuko-nova-legal": "0.1.1",
     "nuko-nova-unslop": "0.9.0",
-    "docs-first": "0.1.2",
+    "docs-first": "0.1.3",
     "lightbox": "0.3.2",
     "statusline-hud": "0.1.0",
     "secrets-env": "0.1.1",
