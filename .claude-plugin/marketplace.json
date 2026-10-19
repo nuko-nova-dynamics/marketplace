@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.28.2",
+  "version": "1.28.3",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -191,12 +191,12 @@
     {
       "name": "statusline-hud",
       "displayName": "Statusline HUD",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/statusline-hud.git",
-        "ref": "statusline-hud-marketplace-v0.1.0",
-        "sha": "d5f58781bae9e2a378b46e253fc800729757cece"
+        "ref": "statusline-hud-marketplace-v0.1.1",
+        "sha": "5399417ee54857bc63150db1f7a7068f85644128"
       },
       "description": "A calm two-line status line, plus a mod that shows running tools and agents, todos, compactions, the prompt cache countdown, the auto-compact forecast and docs-first blocks above the prompt only while they matter. Reads 5-hour and 7-day usage from a CLIProxyAPI pool when Claude Code has none. Requires Claude Code 2.1.294 or later and Bun.",
       "author": {
