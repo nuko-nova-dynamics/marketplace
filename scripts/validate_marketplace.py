@@ -21,7 +21,7 @@ EXPECTED_CODEX_VERSIONS = {
     "nuko-nova-unslop": "0.9.0",
 }
 EXPECTED_CLAUDE_VERSIONS = {
-    "cdx": "0.7.4",
+    "cdx": "0.7.5",
     "nuko-nova-legal": "0.1.1",
     "nuko-nova-unslop": "0.9.0",
     "docs-first": "0.1.3",

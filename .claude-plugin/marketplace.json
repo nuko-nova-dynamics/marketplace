@@ -12,12 +12,12 @@
     {
       "name": "cdx",
       "displayName": "Codex for Claude",
-      "version": "0.7.4",
+      "version": "0.7.5",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/cdx.git",
-        "ref": "cdx-marketplace-v0.7.4",
-        "sha": "07246f4a86716f8090dca8c877dc6a1c4e1876ee"
+        "ref": "cdx-marketplace-v0.7.5",
+        "sha": "6268c5677681d15c0c9d034db82cfe7c36d778a3"
       },
       "description": "Delegate coding, Computer Use, and browser tasks from Claude Code to Codex with explicit plugin and profile selection, verified results, structured reviews, and session controls.",
       "author": {
