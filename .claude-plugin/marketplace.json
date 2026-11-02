@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.29.5",
+  "version": "1.29.6",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -156,12 +156,12 @@
     {
       "name": "lightbox",
       "displayName": "Lightbox",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/lightbox.git",
-        "ref": "lightbox-marketplace-v0.3.2",
-        "sha": "63014f1df82c1687c151dfc1b408e10c0010e633"
+        "ref": "lightbox-marketplace-v0.3.3",
+        "sha": "51723389134713998ff675bc88e15281354921e8"
       },
       "description": "A mod that shows the images you paste and the ones Claude reads, receives or creates in a small strip above the prompt, including HEIC. Requires Claude Code 2.1.288 or later.",
       "author": {
