@@ -116,10 +116,10 @@
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/nuko-nova-unslop.git",
-        "ref": "nuko-nova-unslop-marketplace-v0.9.0",
-        "sha": "de0b9057df028d31e34b259324d24f9e835bee64"
+        "ref": "nuko-nova-unslop-marketplace-v0.9.1",
+        "sha": "57bc194235ac39d6b2f0839dfa75ac8ca20b51f7"
       },
-      "version": "0.9.0",
+      "version": "0.9.1",
       "description": "Human-writing standard for every human-facing response and artifact: no slop or cringe, with facts, voice, and genre preserved.",
       "author": {
         "name": "Nuko Nova Dynamics",
