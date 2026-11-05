@@ -12,14 +12,14 @@
     {
       "name": "cdx",
       "displayName": "Codex for Claude",
-      "version": "0.8.3",
+      "version": "0.8.4",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/cdx.git",
-        "ref": "cdx-marketplace-v0.8.3",
-        "sha": "997c02e3a60176813941aec169d8ece1c81d9073"
+        "ref": "cdx-marketplace-v0.8.4",
+        "sha": "f5832cc7c6ffc461ff6450cbb24d397f0ae9fdc2"
       },
-      "description": "Delegate coding and desktop Computer Use from Claude Code to Codex, with direct native browser-window control for Claude, verified results, structured reviews, and session controls.",
+      "description": "Delegate coding and desktop Computer Use from Claude Code to Codex, including Brave extension tabs through app-hosted CUA, with verified results, structured reviews, and session controls.",
       "author": {
         "name": "Nuko Nova Dynamics",
         "email": "hello@nukonova.com"
