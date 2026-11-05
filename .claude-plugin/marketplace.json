@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.30.3",
+  "version": "1.30.2",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -12,14 +12,14 @@
     {
       "name": "cdx",
       "displayName": "Codex for Claude",
-      "version": "0.8.4",
+      "version": "0.8.2",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/cdx.git",
-        "ref": "cdx-marketplace-v0.8.4",
-        "sha": "f5832cc7c6ffc461ff6450cbb24d397f0ae9fdc2"
+        "ref": "cdx-marketplace-v0.8.2",
+        "sha": "3a26da7dfde4c0d5595a3d1ac411b110f4101366"
       },
-      "description": "Delegate coding and desktop Computer Use from Claude Code to Codex, including Brave extension tabs through app-hosted CUA, with verified results, structured reviews, and session controls.",
+      "description": "Delegate coding, Computer Use, and browser tasks from Claude Code to Codex with explicit plugin and profile selection, verified results, structured reviews, and session controls.",
       "author": {
         "name": "Nuko Nova Dynamics",
         "email": "hello@nukonova.com"
