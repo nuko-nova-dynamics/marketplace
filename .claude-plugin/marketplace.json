@@ -2,7 +2,7 @@
   "$schema": "https://code.claude.com/marketplace.schema.json",
   "name": "nuko-nova-tools",
   "description": "Claude Code plugins built at Nuko Nova Dynamics.",
-  "version": "1.31.5",
+  "version": "1.31.6",
   "owner": {
     "name": "Nuko Nova Dynamics",
     "email": "hello@nukonova.com",
@@ -226,14 +226,14 @@
     {
       "name": "secrets-env",
       "displayName": "Secrets Env",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "source": {
         "source": "url",
         "url": "https://github.com/nuko-nova-dynamics/secrets-env.git",
-        "ref": "secrets-env-marketplace-v0.3.0",
-        "sha": "5a7e608e4c25351a9eea048b649fbae74a3feeeb"
+        "ref": "secrets-env-marketplace-v0.3.1",
+        "sha": "e710fed98e40c69add423c51b509671d819502b9"
       },
-      "description": "A mod that lets Claude ask for API keys and tokens in a T3 Code secret card, a native macOS panel, or a one-use web form over Tailscale on Linux, keep them in your 1Password vault, and use them in commands and gitignored env files without the values reaching the conversation. Requires macOS or Linux, Claude Code 2.1.295 or later, Bun and the 1Password CLI.",
+      "description": "A mod that lets Claude ask for API keys and tokens in a T3 Code secret card, a native macOS panel, or a one-use web form over Tailscale on Linux, keep them in your 1Password vault, and use them in commands and gitignored env files without the values reaching the conversation. Requires macOS, Linux or Windows, Claude Code 2.1.295 or later, Bun and the 1Password CLI.",
       "author": {
         "name": "Nuko Nova Dynamics",
         "email": "hello@nukonova.com",
